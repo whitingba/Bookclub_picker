@@ -1,4 +1,7 @@
 
+
+
+
 var nameArray = [];
 
 function submitName() {
@@ -7,7 +10,20 @@ function submitName() {
 
 
   nameArray.push(name1);
+  addNames();
+}
+
+function addNames() {
+
+
+  let newSpace = document.getElementById('desert');
+  let newSpan = document.createElement('span');
+  newSpan.innerHTML = nameArray[0];
+
+  newSpace.appendChild(newSpan);
+
   console.log(nameArray);
+
 }
 
 
