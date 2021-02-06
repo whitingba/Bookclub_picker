@@ -43,24 +43,15 @@ function addButton() {
     // newButton.id = 'randomizerBtn';
     // newButton.innerHTML = "Pick Random host";
     // hostNameDiv.appendChild(newButton);
+
+    //decided to include the button in the code instead of dynamically creating it, then I could hide or display depending on the conditions
     secondSpace.appendChild(randomButton);
     randomButton.style.display = "block";
-
-    // randomButton.addEventListener('click', selectRandom());
-
 
   } else {
     randomButton.style.display = "none";
   }
 }
-
-
-// if (randomButton) {
-//   randomButton.addEventListener('click', function () {
-//     console.log("button clicked");
-//   });
-// };
-
 
 
 
