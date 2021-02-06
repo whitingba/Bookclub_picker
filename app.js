@@ -4,6 +4,7 @@ var nameArray = [];
 let hostNameDiv = document.getElementById('desert');
 let secondSpace = document.getElementById('desert2');
 let thirdSpace = document.getElementById('desert3');
+let bookHostName = document.getElementById('chosenHost');
 
 
 function submitName() {
@@ -67,9 +68,17 @@ function addButton() {
 function selectRandom() {
   //select random name from Array
   let randomName = nameArray[Math.floor(Math.random() * nameArray.length)];
-  console.log('Random name: ' + randomName);
+  //console.log('Random name: ' + randomName);
+  bookHostName.innerHTML = '';
+  bookHostName.style.color = 'blue';
+  bookHostName.style.fontSize = "20px";
+  bookHostName.innerHTML = "</br>" + randomName;
+
+
 
 }
+
+
 
 
 
