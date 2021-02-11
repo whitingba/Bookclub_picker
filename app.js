@@ -11,6 +11,7 @@ function submitName() {
   let name1 = document.getElementById('FirstName').value;
   //console.log(name1);
 
+  // TODO: set name to local storage
 
   nameArray.push(name1);
   addNames();
@@ -18,6 +19,8 @@ function submitName() {
 
 //function to add names to the div with id 'desert'
 function addNames() {
+
+  // TODO: grab names from local storage and put them on the DOM
 
   //grab an id in the HTML and create a variable for a span
   let newSpan = document.createElement('span');
@@ -57,6 +60,8 @@ function addButton() {
 
 //select a random bookclub host based on the selections available in the array
 function selectRandom() {
+
+  // TODO: select a random person from the list of hosts, but then remove that person from the possible list in local storage
   //select random name from Array
   let randomName = nameArray[Math.floor(Math.random() * nameArray.length)];
   //console.log('Random name: ' + randomName);
@@ -69,7 +74,7 @@ function selectRandom() {
 
 }
 
-
+// TODO: function to clear hosts names if one was accidently added
 
 
 
